@@ -56,3 +56,11 @@
 {
     display: none;
 }
+
+.wrapper {
+    text-align: center;
+}
+
+.imgFloat {
+    float: left;
+  }
