@@ -1,3 +1,12 @@
+/*
+* index.js
+* Name: Jack Ingram
+* SIN: 100710241
+* Date: April 2nd 2020
+*
+* Original Author: Tom Tsiliopoulos
+*/
+
 /* CONTROLLERS SECTION */
 module.exports.displayHome = (res) =>
 {

@@ -1,3 +1,11 @@
+/*
+* app.js
+* Name: Jack Ingram
+* SIN: 100710241
+* Date: April 2nd 2020
+*
+*/
+
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
