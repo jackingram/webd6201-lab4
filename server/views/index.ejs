@@ -20,11 +20,19 @@
 
 <% } else if(title == 'Projects') { %>
 
-    <%- include ./content/projects.ejs %>
+<%- include ./content/projects.ejs %>
 
 <% } else if(title == 'Services') { %>
 
-    <%- include ./content/services.ejs %>
+<%- include ./content/services.ejs %>
+    
+<% } else if(title == 'Login') { %>
+
+<%- include ./content/login.ejs %>
+
+<% } else if(title == 'Register') { %>
+
+<%- include ./content/register.ejs %>
 
 <% } %>
 

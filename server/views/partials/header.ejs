@@ -13,13 +13,13 @@
         <% } else { %>
           <li id="home" class="nav-item">
         <% } %>
-        <a class="nav-link" href="/home"><i class="fas fa-home"></i> Home</a></li>
+        <a class="nav-link" href="/home"><i class="fas fa-igloo"></i> Home</a></li>
           
 
          <% if(title == 'Projects') { %>
           <li id="projects" class="nav-item active">
           <% } else { %>
-           <li id="products" class="nav-item">
+           <li id="projects" class="nav-item">
          <% } %>
          <a class="nav-link" href="/projects"><i class="fas fa-map"></i> Projects</a></li>
           
@@ -36,15 +36,24 @@
           <% } else { %>
           <li id="about" class="nav-item">
           <% } %>
-          <a class="nav-link" href="/about"><i class="fas fa-info-circle"></i> About Me</a></li>
+          <a class="nav-link" href="/about"><i class="fas fa-info-circle"></i> About Us</a></li>
 
           <% if(title == 'Contact') { %>
           <li id="contact" class="nav-item active">
           <% } else { %>
           <li id="contact" class="nav-item">
           <% } %>
-          <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact Me</a></li>
+          <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact Us</a></li>
           
+          <% if(typeof displayName == 'string' && displayName) { %>
+          <li class="navbar-text"><i class="fas fa-lg fa-user"></i>
+          Welcome, <%= displayName %></li>
+          <li class="nav-item"><a href="/logout" class="nav-link">
+          <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a></li>
+          <% } else { %>
+          <li id="login" class="nav-item"><a class="nav-link" href="/login">
+          <i class="fas fa-lg fa-sign-in-alt"></i> Login</a></li>
+          <% } %>
        
         </div>
     </nav>
