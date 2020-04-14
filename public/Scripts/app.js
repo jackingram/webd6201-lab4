@@ -15,7 +15,7 @@ class Contact
 
     function DisplayContactContent()
     {
-        document.title = "WEBD6201 - Contact Us";
+        document.title = "Jack Ingram - Contact Us";
         function clearForm()
         {
             //document.getElementById("contactForm").reset();
@@ -134,7 +134,7 @@ class Contact
 
     function DisplayContactList()
     {
-        document.title = "WEBD6201 - Contact List";
+        document.title = "Jack Ingram - Contact List";
         let deleteButtons = document.getElementsByClassName("btn btn-danger");
 
         for (const button of deleteButtons) {
