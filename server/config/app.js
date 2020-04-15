@@ -30,17 +30,7 @@ mongoose.connect(DB.URI, {
   useNewUrlParser: true, useUnifiedTopology: true});
 
 
-//test connection
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://jack:<password>@cluster0-c1rpz.mongodb.net/test?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
-
-
+  
 let mongoDB = mongoose.connection;
 mongoDB.on('error', console.error.bind(console, 'Connection Error: '));
 mongoDB.once('open', ()=>{
