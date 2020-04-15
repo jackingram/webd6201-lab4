@@ -26,7 +26,7 @@ let mongoose = require('mongoose');
 let DB = require('./db');
 
 // point Mongoose to the DB URI
-mongoose.connect(DB.URI || "mongodb+srv://jack:piggy@cluster0-c1rpz.mongodb.net/test?retryWrites=true&w=majority", {
+mongoose.connect(MONGODB_URI || DB.URI, {
   useNewUrlParser: true, useUnifiedTopology: true});
 
 let mongoDB = mongoose.connection;
